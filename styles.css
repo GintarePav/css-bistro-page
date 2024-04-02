@@ -1,0 +1,30 @@
+/* Main Color:
+Coastal Fog: #8C9CA5
+
+Darker Variation:
+Dark Coastal Fog: #76848D
+Deep Coastal Fog: #616C73
+Stormy Coastal Fog: #4D575D
+
+Lighter Variation:
+Light Coastal Fog: #A4AFB6
+Pale Coastal Fog: #BBC4CA
+Misty Coastal Fog: #D2D9DF */
+
+
+.about-img-container {
+    width: 100%;
+    height: 350px;
+}
+
+.daily-special-img-container {
+    width: 100%;
+    height: 250px;
+}
+
+.section-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
