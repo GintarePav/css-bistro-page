@@ -4,86 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tidal Bistro</title>
-    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
-        <a class="navbar-brand" href="#">Tidal</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Home
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#about">About</a></li>
-                <li>
-                  <a class="dropdown-item" href="#gallery">Gallery</a>
-                </li>
-                <li><a class="dropdown-item" href="#awards">Awards</a></li>
-                <li><a class="dropdown-item" href="#team">Our Team</a></li>
-                <li><a class="dropdown-item" href="#career">Career</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#contacts">Contacts</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#daily-special">Daily Special</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/menu.html">Menu</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </nav>
+      <div class="w-100 fixed-top">
+        <nav class="navbar navbar-expand-lg mb-5 navigation">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="images/tidal-bistro-logo.png"
+              class="ms-3"
+              style="height: 40px"
+              alt="a white outline of a crab"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="d-flex flex-column">
+              <div class="burger"></div>
+              <div class="burger"></div>
+              <div class="burger"></div>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle ms-3 d-inline-block"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Home
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#about">About</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#gallery">Gallery</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#team">Our Team</a></li>
+                  <li><a class="dropdown-item" href="#career">Career</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#contacts">Contacts</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link d-inline-block" href="#daily-special"
+                  >Daily Special</a
+                >
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link d-inline-block" href="/menu.html">Menu</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control mx-3 search-bar"
+                type="search"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+              <button class="btn me-3 nav-button" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="container">
-        <section id="about">
-          <h2 class="mb-5">About</h2>
+        <section id="about" class="scroll-margin">
+          <h1 class="my-5 text-center pt-5">Tidal Bistro</h1>
+          <h2 class="my-5 text-center">About</h2>
           <div class="row">
             <div class="col-4">
               <div class="about-img-container">
                 <img
                   src="https://images.unsplash.com/photo-1574974051678-44c85748ebcc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="rounded section-img"
+                  class="section-img"
                   alt="wooden chairs and tables inside the bistro"
                 />
               </div>
@@ -104,8 +116,8 @@
               </p>
             </div>
           </div>
-          <div class="row mt-5">
-            <div class="col-8 col-8 d-flex flex-column justify-content-center">
+          <div class="row my-5">
+            <div class="col-8 d-flex flex-column justify-content-center">
               <p>
                 At Tidal Bistro, we believe in celebrating the freshest catch of
                 the day. Our chefs meticulously select the finest ingredients
@@ -125,23 +137,23 @@
               <div class="about-img-container">
                 <img
                   src="https://images.unsplash.com/photo-1525193612562-0ec53b0e5d7c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="rounded section-img"
+                  class="section-img"
                   alt="close-up of bistro table"
                 />
               </div>
             </div>
           </div>
-          <div class="row mt-5 mb-5">
+          <div class="row my-5">
             <div class="col-4">
               <div class="about-img-container">
                 <img
                   src="https://images.unsplash.com/photo-1587204760659-2013742a079a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="rounded section-img"
+                  class="section-img"
                   alt="tables and chairs in the evening"
                 />
               </div>
             </div>
-            <div class="col-8 col-8 d-flex flex-column justify-content-center">
+            <div class="col-8 d-flex flex-column justify-content-center">
               <p>
                 But Tidal Bistro is more than just a restaurant; it's a
                 gathering place where friends and family come together to share
@@ -161,9 +173,9 @@
           </div>
         </section>
 
-        <section id="daily-special">
-          <h2 class="mb-5">Daily Special</h2>
-          <div class="d-flex flex-row flex-wrap justify-content-center">
+        <section id="daily-special" class="scroll-margin">
+          <h2 class="my-5 text-center">Daily Special</h2>
+          <div class="d-flex flex-row flex-wrap justify-content-center my-5">
             <div class="card mx-3 my-3" style="width: 18rem">
               <div class="daily-special-img-container">
                 <img
@@ -185,10 +197,10 @@
                 </p>
               </div>
               <div
-                class="card-body d-flex justify-content-between align-items-end"
+                class="card-body d-flex justify-content-between align-items-center"
               >
-                <p>$17</p>
-                <a href="#" class="btn btn-success">Add to cart</a>
+                <p class="fw-bold">$17</p>
+                <a href="#" class="btn buttons">Add to cart</a>
               </div>
             </div>
             <div class="card mx-3 my-3" style="width: 18rem">
@@ -212,10 +224,10 @@
                 </p>
               </div>
               <div
-                class="card-body d-flex justify-content-between align-items-end"
+                class="card-body d-flex justify-content-between align-items-center"
               >
-                <p>$24</p>
-                <a href="#" class="btn btn-success">Add to cart</a>
+                <p class="fw-bold">$24</p>
+                <a href="#" class="btn buttons">Add to cart</a>
               </div>
             </div>
             <div class="card mx-3 my-3" style="width: 18rem">
@@ -239,10 +251,10 @@
                 </p>
               </div>
               <div
-                class="card-body d-flex justify-content-between align-items-end"
+                class="card-body d-flex justify-content-between align-items-center"
               >
-                <p>$22</p>
-                <a href="#" class="btn btn-success">Add to cart</a>
+                <p class="fw-bold">$22</p>
+                <a href="#" class="btn buttons">Add to cart</a>
               </div>
             </div>
             <div class="card mx-3 my-3" style="width: 18rem">
@@ -265,10 +277,10 @@
                 </p>
               </div>
               <div
-                class="card-body d-flex justify-content-between align-items-end"
+                class="card-body d-flex justify-content-between align-items-center"
               >
-                <p>$14</p>
-                <a href="#" class="btn btn-success">Add to cart</a>
+                <p class="fw-bold">$14</p>
+                <a href="#" class="btn buttons">Add to cart</a>
               </div>
             </div>
             <div class="card mx-3 my-3" style="width: 18rem">
@@ -292,10 +304,10 @@
                 </p>
               </div>
               <div
-                class="card-body d-flex justify-content-between align-items-end"
+                class="card-body d-flex justify-content-between align-items-center"
               >
-                <p>$28</p>
-                <a href="#" class="btn btn-success">Add to cart</a>
+                <p class="fw-bold">$28</p>
+                <a href="#" class="btn buttons">Add to cart</a>
               </div>
             </div>
             <div class="card mx-3 my-3" style="width: 18rem">
@@ -319,10 +331,10 @@
                 </p>
               </div>
               <div
-                class="card-body d-flex justify-content-between align-items-end"
+                class="card-body d-flex justify-content-between align-items-center"
               >
-                <p>$25</p>
-                <a href="#" class="btn btn-success">Add to cart</a>
+                <p class="fw-bold">$25</p>
+                <a href="#" class="btn buttons">Add to cart</a>
               </div>
             </div>
             <div class="card mx-3 my-3" style="width: 18rem">
@@ -346,18 +358,18 @@
                 </p>
               </div>
               <div
-                class="card-body d-flex justify-content-between align-items-end"
+                class="card-body d-flex justify-content-between align-items-center"
               >
-                <p>$14</p>
-                <a href="#" class="btn btn-success">Add to cart</a>
+                <p class="fw-bold">$14</p>
+                <a href="#" class="btn buttons">Add to cart</a>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="gallery">
-          <h2>Gallery</h2>
-          <div id="carouselExampleIndicators" class="carousel slide">
+        <section id="gallery" class="scroll-margin">
+          <h2 class="my-5 text-center">Gallery</h2>
+          <div id="carouselExampleIndicators" class="carousel slide my-5">
             <div class="carousel-indicators">
               <button
                 type="button"
@@ -429,79 +441,82 @@
               ></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="https://images.unsplash.com/photo-1579783411194-f697db862dcd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="d-block w-100"
-                  alt="shrimp cooking in a wide pan"
-                />
-              </div>
-              <div class="carousel-item">
+              <div class="carousel-item active carousel-container">
                 <img
                   src="https://images.unsplash.com/photo-1551529563-fce9529e67ac?q=80&w=2031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100 section-img"
                   alt="bistro host and menu"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item carousel-container">
+                <img
+                  src="https://images.unsplash.com/photo-1579783411194-f697db862dcd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100 section-img"
+                  style="object-position: center bottom"
+                  alt="shrimp cooking in a wide pan"
+                />
+              </div>
+              <div class="carousel-item carousel-container">
                 <img
                   src="https://images.unsplash.com/photo-1565961492196-c20248390c90?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="d-block w-100"
+                  class="d-block w-100 section-img"
+                  style="object-position: center bottom"
                   alt="close-up of fries and dips"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item carousel-container">
                 <img
                   src="https://images.unsplash.com/photo-1531651436064-c441ac97489b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="d-block w-100"
+                  class="d-block w-100 section-img"
                   alt="blue coffee cups and a sofa"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item carousel-container">
                 <img
                   src="https://images.unsplash.com/photo-1551529674-98d60c90228a?q=80&w=1898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="d-block w-100"
+                  class="d-block w-100 section-img"
                   alt="a drink with orange slices"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item carousel-container">
                 <img
                   src="https://images.unsplash.com/photo-1471445281684-fdf28e036aa8?q=80&w=1860&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="d-block w-100"
+                  class="d-block w-100 section-img"
                   alt="close-up of lampshades in the evening"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item carousel-container">
                 <img
                   src="https://images.unsplash.com/photo-1583898350727-9bf2e476c242?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="d-block w-100"
+                  class="d-block w-100 section-img"
                   alt="pink fruit drink with ice"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item carousel-container">
                 <img
                   src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="d-block w-100"
+                  class="d-block w-100 section-img"
                   alt="close-up of salmon fillet with spinach"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item carousel-container">
                 <img
                   src="https://images.unsplash.com/photo-1592861956120-e524fc739696?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="d-block w-100"
+                  class="d-block w-100 section-img"
                   alt="woman in white shirt eating a dish"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item carousel-container">
                 <img
                   src="https://images.unsplash.com/photo-1522336572468-97b06e8ef143?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="d-block w-100"
+                  class="d-block w-100 section-img"
                   alt="chairs and tables in low light"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item carousel-container">
                 <img
                   src="https://images.unsplash.com/photo-1636406261400-dc146d8f3699?q=80&w=1896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="d-block w-100"
+                  class="d-block w-100 section-img"
                   alt="moss in tiny glass jars"
                 />
               </div>
@@ -531,125 +546,73 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <h4 id="awards">Awards & Accolades</h4>
-          <p>
-            At Tidal Bistro, we take pride in our commitment to culinary
-            excellence and exceptional dining experiences. Over the years, our
-            dedication to crafting exquisite seafood dishes and providing a
-            welcoming atmosphere has been recognized by esteemed industry
-            organizations and publications. We are honored to have received the
-            following awards:
-          </p>
-          <h5>Culinary Excellence Awards:</h5>
-          <ul>
-            <li>
-              Winner of the "Best Seafood Restaurant" by Portland Seafood
-              Society
-            </li>
-            <li>
-              Recipient of the "Outstanding Seafood Cuisine" award from Maine
-              Food & Drink Association
-            </li>
-            <li>
-              Voted as a top dining destination for seafood lovers by Portland
-              Food Critics Association
-            </li>
-          </ul>
-          <h5>Interior Design Recognition:</h5>
-          <ul>
-            <li>
-              Awarded for "Best Restaurant Interior Design" by Portland Design
-              Guild
-            </li>
-            <li>
-              Recognized for our coastal-inspired ambiance and innovative decor
-              by Maine Interior Design Magazine
-            </li>
-            <li>
-              Featured in Portland Design Blog for our unique blend of maritime
-              charm and modern aesthetics
-            </li>
-          </ul>
-          <p>
-            These accolades serve as a testament to our unwavering commitment to
-            delivering memorable dining experiences and creating a welcoming
-            environment that delights both the palate and the senses.
-          </p>
         </section>
 
-        <section id="team">
-          <h2>Our Team</h2>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://images.unsplash.com/photo-1532635211-8ec15f2ce05c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="card-img-top"
-              alt="chef Sebastian Marlin adding ingredients on plate"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Sebastian Marlin</h5>
-              <p class="card-text">
-                With a passion for seafood that runs as deep as the ocean, Chef
-                Sebastian Marlin is renowned for his mastery of coastal cuisine.
-                Born and raised in a fishing village, Sebastian's culinary
-                journey is steeped in tradition and innovation. His specialties
-                include delicately grilled swordfish, marinated in a secret
-                blend of herbs and spices passed down through generations.
-                Sebastian's commitment to sustainability shines in his dishes,
-                as he expertly pairs fresh catch with locally sourced produce,
-                creating harmonious flavors that celebrate the bounty of the
-                sea.
-              </p>
+        <section id="team" class="scroll-margin">
+          <h2 class="my-5 text-center">Our Team</h2>
+          <div class="d-flex flex-row flex-wrap justify-content-center my-5">
+            <div class="card mx-3 my-3" style="width: 18rem">
+              <img
+                src="https://images.unsplash.com/photo-1709396759790-9051f0c1801a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top section-img"
+                alt="chef Isabella Saltair adding whipped cream on a dessert"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Isabella Saltair</h5>
+                <p class="card-text">
+                  Chef Isabella Saltair brings a touch of elegance to every
+                  plate with her refined palate and exquisite culinary
+                  creations. Isabella's specialties encompass the artistry of
+                  seafood, showcasing a delicate balance of flavors and
+                  textures. Her signature dish, the lobster bisque, is a
+                  symphony of rich, velvety broth infused with the essence of
+                  fresh Maine lobster and finished with a hint of brandy.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://images.unsplash.com/photo-1709396759790-9051f0c1801a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="card-img-top"
-              alt="chef Isabella Saltair adding whipped cream on a dessert"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Isabella Saltair</h5>
-              <p class="card-text">
-                Chef Isabella Saltair brings a touch of elegance to every plate
-                with her refined palate and exquisite culinary creations.
-                Inspired by her coastal upbringing, Isabella's specialties
-                encompass the artistry of seafood, showcasing a delicate balance
-                of flavors and textures. Her signature dish, the lobster bisque,
-                is a symphony of rich, velvety broth infused with the essence of
-                fresh Maine lobster and finished with a hint of brandy.
-                Isabella's commitment to culinary excellence and attention to
-                detail elevate every dish to a culinary masterpiece, leaving
-                diners craving for more.
-              </p>
+            <div class="card mx-3 my-3" style="width: 18rem">
+              <img
+                src="https://images.unsplash.com/photo-1532635211-8ec15f2ce05c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top section-img"
+                alt="chef Sebastian Marlin adding ingredients on plate"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sebastian Marlin</h5>
+                <p class="card-text">
+                  With a passion for seafood that runs as deep as the ocean,
+                  Chef Sebastian Marlin is renowned for his mastery of coastal
+                  cuisine. His specialties include delicately grilled swordfish,
+                  marinated in a secret blend of herbs and spices passed down
+                  through generations. Sebastian expertly pairs fresh catch with
+                  locally sourced produce, creating harmonious flavors that
+                  celebrate the bounty of the sea.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://images.unsplash.com/photo-1574966740429-6158cb530208?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="card-img-top"
-              alt="chef Santiago Bayshore preparing cooking foil for wrapping ingredients"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Santiago Bayshore</h5>
-              <p class="card-text">
-                A culinary maverick with a flair for innovation, Chef Santiago
-                Bayshore brings a modern twist to classic seafood dishes,
-                pushing the boundaries of flavor and creativity. Hailing from a
-                family of fishermen, Santiago's upbringing instilled in him a
-                deep respect for the sea and its bounty. His specialties include
-                the tantalizing seafood ceviche, bursting with vibrant colors
-                and bold flavors, and his signature grilled octopus, tenderized
-                to perfection and served with a zesty citrus glaze. Santiago's
-                culinary philosophy revolves around honoring tradition while
-                embracing innovation, resulting in dishes that captivate the
-                senses and ignite the imagination.
-              </p>
+            <div class="card mx-3 my-3" style="width: 18rem">
+              <img
+                src="https://images.unsplash.com/photo-1574966740429-6158cb530208?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top section-img"
+                alt="chef Santiago Bayshore preparing cooking foil for wrapping ingredients"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Santiago Bayshore</h5>
+                <p class="card-text">
+                  A culinary maverick with a flair for innovation, Chef Santiago
+                  Bayshore brings a modern twist to classic seafood dishes,
+                  pushing the boundaries of flavor and creativity. His
+                  specialties include the tantalizing seafood ceviche, bursting
+                  with vibrant colors and bold flavors, and his signature
+                  grilled octopus, tenderized to perfection and served with a
+                  zesty citrus glaze.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        <section id="career">
-          <h2>Career</h2>
+        <section id="career" class="scroll-margin">
+          <h2 class="my-5 text-center">Career</h2>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -724,7 +687,7 @@
                     <li>Employee discounts on food and beverages</li>
                     <li>Supportive and collaborative work environment</li>
                   </ul>
-                  <button type="button" class="btn btn-success">Apply</button>
+                  <button type="button" class="btn buttons">Apply</button>
                 </div>
               </div>
             </div>
@@ -798,7 +761,7 @@
                     <li>Employee discounts on food and beverages</li>
                     <li>Supportive and collaborative work environment</li>
                   </ul>
-                  <button type="button" class="btn btn-success">Apply</button>
+                  <button type="button" class="btn buttons">Apply</button>
                 </div>
               </div>
             </div>
@@ -873,7 +836,7 @@
                     <li>Employee discounts on food and beverages</li>
                     <li>Supportive and collaborative work environment</li>
                   </ul>
-                  <button type="button" class="btn btn-success">Apply</button>
+                  <button type="button" class="btn buttons">Apply</button>
                 </div>
               </div>
             </div>
@@ -947,33 +910,37 @@
                     <li>Employee discounts on food and beverages</li>
                     <li>Supportive and collaborative work environment</li>
                   </ul>
-                  <button type="button" class="btn btn-success">Apply</button>
+                  <button type="button" class="btn buttons">Apply</button>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="contacts">
-          <h2>Contacts</h2>
-          <div class="row">
-            <div class="col">
-              <img
-                src="https://images.unsplash.com/photo-1569096651661-820d0de8b4ab?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="img-fluid"
-                alt="bistro entrance with tables outside"
-              />
+        <section id="contacts" class="scroll-margin">
+          <h2 class="my-5 text-center">Contacts</h2>
+          <div
+            class="row d-flex flex-row flex-wrap justify-content-center my-5"
+          >
+            <div class="col-auto my-3">
+              <div class="contacts-img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1569096651661-820d0de8b4ab?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="section-img"
+                  alt="bistro entrance with tables outside"
+                />
+              </div>
             </div>
-            <div class="col">
+            <div class="col-auto my-3" style="width: 400px">
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label"
                   >Name</label
                 >
                 <input
                   type="name"
-                  class="form-control"
+                  class="form-control contacts-form"
                   id="exampleFormControlInput1"
-                  placeholder="Full name"
+                  placeholder="Your full name"
                 />
               </div>
               <div class="mb-3">
@@ -982,7 +949,7 @@
                 >
                 <input
                   type="email"
-                  class="form-control"
+                  class="form-control contacts-form"
                   id="exampleFormControlInput2"
                   placeholder="name@example.com"
                 />
@@ -992,19 +959,19 @@
                   >Questions and Comments</label
                 >
                 <textarea
-                  class="form-control"
+                  class="form-control contacts-form"
                   id="exampleFormControlTextarea1"
                   rows="3"
                 ></textarea>
               </div>
-              <button type="button" class="btn btn-success">Submit</button>
+              <button type="button" class="btn w-100 buttons">Submit</button>
             </div>
-            <div class="col">
+            <div class="col-auto my-3">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d858.2430218257522!2d-70.26379094653839!3d43.6528717938303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb29c16dc0273b3%3A0xd2d72f056106f98!2s133%20Spring%20St%2C%20Portland%2C%20ME%2004101%2C%20USA!5e0!3m2!1sen!2slt!4v1711820173119!5m2!1sen!2slt"
                 width="400"
-                height="300"
-                style="border: 0"
+                height="350"
+                style="border: 0; border-radius: 2px"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -1015,10 +982,22 @@
       </div>
     </main>
     <footer>
-      <p><span>Address:</span>133 Spring St, Portland, ME 04101, USA</p>
-      <p><span>Hours:</span>11:00 AM - 9:00 PM</p>
-      <p><span>Phone:</span>(207) 555-5555</p>
-      <p><span>Email:</span>info@tidal.com</p>
+      <div class="footer-fill">
+        <p class="pt-3 mb-0 ms-3">
+          <span class="fw-bold">Address:</span> 133 Spring St, Portland, ME
+          04101, USA
+        </p>
+        <p class="mb-0 ms-3">
+          <span class="fw-bold">Hours:</span> 11:00 AM - 9:00 PM
+        </p>
+        <p class="mb-0 ms-3">
+          <span class="fw-bold">Phone:</span> (207) 555-5555
+        </p>
+        <p class="mb-0 ms-3">
+          <span class="fw-bold">Email:</span> info@tidal.com
+        </p>
+        <p class="fst-italic mt-2 mb-0 text-center">&copy; 2024 Tidal Bistro</p>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
