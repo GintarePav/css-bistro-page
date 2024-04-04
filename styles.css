@@ -1,16 +1,3 @@
-/* Main Color:
-Coastal Fog: #8C9CA5
-
-Darker Variation:
-Dark Coastal Fog: #76848D
-Deep Coastal Fog: #616C73
-Stormy Coastal Fog: #4D575D
-
-Lighter Variation:
-Light Coastal Fog: #A4AFB6
-Pale Coastal Fog: #BBC4CA
-Misty Coastal Fog: #D2D9DF */
-
 :root {
     --main-color: #8C9CA5;
     --outline-color: #BBC4CA;
@@ -19,7 +6,21 @@ Misty Coastal Fog: #D2D9DF */
     --button-color: #76848D;
     --footer-text-color: #393f43;
     --white: #ffffff;
+}
+
+.nunito-sans-font {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
   }
+
+body {
+    font-family: "Nunito Sans", Calibri, sans-serif;
+}
 
 .scroll-margin {
     scroll-margin: 100px;
@@ -63,7 +64,7 @@ Misty Coastal Fog: #D2D9DF */
 
 .burger {
     width: 30px;
-    height: 1.5px;
+    height: 2px;
     background-color: var(--white);
     margin-bottom: 5px;
     border-radius: 2px;
@@ -108,6 +109,7 @@ Misty Coastal Fog: #D2D9DF */
     border-bottom: 2px solid var(--white);
     background-color: var(--main-color);
     caret-color: var(--white);
+    color: var(--white);
 }
 
 .nav-button {
@@ -123,10 +125,13 @@ Misty Coastal Fog: #D2D9DF */
     border: 2px solid var(--white);
 }
 
+.title-img {
+    max-height: 350px;
+}
+
 .about-img-container {
     width: 100%;
     height: 300px;
-    border-radius: 2px;
 }
 
 .daily-special-img-container {
@@ -142,6 +147,13 @@ Misty Coastal Fog: #D2D9DF */
 .contacts-img-container {
     width: 100%;
     height: 350px;
+}
+
+@media (max-width: 1023px) {
+    .about-img-container, .contacts-img-container {
+        width: 100%;
+        height: 50vh;
+    }
 }
 
 .section-img {
@@ -192,5 +204,5 @@ Misty Coastal Fog: #D2D9DF */
     height: max-content;
     background-color: var(--main-color);
     color: var(--footer-text-color);
-    
+    font-size: 0.8em;
 }
