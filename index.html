@@ -93,7 +93,7 @@
     </header>
     <main>
       <div class="container">
-        <section id="about" class="scroll-margin">
+        <section id="about" class="scroll-margin mx-3">
           <div class="row">
             <div class="col-12">
               <h1 class="mt-5 text-center pt-5">
@@ -197,6 +197,18 @@
         </section>
 
         <section id="daily-special" class="scroll-margin">
+          <div id="popup1" class="overlay">
+            <div class="overlay__popup">
+              <h2>Tidal Bistro</h2>
+              <a class="overlay__close" href="#daily-special">&times;</a>
+              <div class="overlay__content">
+                <p>
+                  🐟 Your taste buds are in for a treat! You've just added a
+                  today's special to your cart! 🦀
+                </p>
+              </div>
+            </div>
+          </div>
           <h2 class="my-5 text-center">Daily Special</h2>
           <div class="d-flex flex-row flex-wrap justify-content-center my-5">
             <div class="card mx-3 my-3" style="width: 18rem">
@@ -223,7 +235,7 @@
                 class="card-body d-flex justify-content-between align-items-center"
               >
                 <p class="fw-bold">$17</p>
-                <a href="#" class="btn buttons">Add to cart</a>
+                <a href="#popup1" class="btn buttons">Add to cart</a>
               </div>
             </div>
             <div class="card mx-3 my-3" style="width: 18rem">
@@ -250,7 +262,7 @@
                 class="card-body d-flex justify-content-between align-items-center"
               >
                 <p class="fw-bold">$24</p>
-                <a href="#" class="btn buttons">Add to cart</a>
+                <a href="#popup1" class="btn buttons">Add to cart</a>
               </div>
             </div>
             <div class="card mx-3 my-3" style="width: 18rem">
@@ -277,7 +289,7 @@
                 class="card-body d-flex justify-content-between align-items-center"
               >
                 <p class="fw-bold">$22</p>
-                <a href="#" class="btn buttons">Add to cart</a>
+                <a href="#popup1" class="btn buttons">Add to cart</a>
               </div>
             </div>
             <div class="card mx-3 my-3" style="width: 18rem">
@@ -303,7 +315,7 @@
                 class="card-body d-flex justify-content-between align-items-center"
               >
                 <p class="fw-bold">$14</p>
-                <a href="#" class="btn buttons">Add to cart</a>
+                <a href="#popup1" class="btn buttons">Add to cart</a>
               </div>
             </div>
             <div class="card mx-3 my-3" style="width: 18rem">
@@ -330,7 +342,7 @@
                 class="card-body d-flex justify-content-between align-items-center"
               >
                 <p class="fw-bold">$28</p>
-                <a href="#" class="btn buttons">Add to cart</a>
+                <a href="#popup1" class="btn buttons">Add to cart</a>
               </div>
             </div>
             <div class="card mx-3 my-3" style="width: 18rem">
@@ -357,7 +369,7 @@
                 class="card-body d-flex justify-content-between align-items-center"
               >
                 <p class="fw-bold">$25</p>
-                <a href="#" class="btn buttons">Add to cart</a>
+                <a href="#popup1" class="btn buttons">Add to cart</a>
               </div>
             </div>
             <div class="card mx-3 my-3" style="width: 18rem">
@@ -384,13 +396,13 @@
                 class="card-body d-flex justify-content-between align-items-center"
               >
                 <p class="fw-bold">$14</p>
-                <a href="#" class="btn buttons">Add to cart</a>
+                <a href="#popup1" class="btn buttons">Add to cart</a>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="gallery" class="scroll-margin">
+        <section id="gallery" class="scroll-margin mx-3">
           <h2 class="my-5 text-center">Gallery</h2>
           <div id="carouselExampleIndicators" class="carousel slide my-5">
             <div class="carousel-indicators">
@@ -634,7 +646,27 @@
           </div>
         </section>
 
-        <section id="career" class="scroll-margin">
+        <section id="career" class="scroll-margin mx-3">
+          <div id="popup-job" class="overlay">
+            <div class="overlay__popup">
+              <h2>Tidal Bistro</h2>
+              <a class="overlay__close" href="#career">&times;</a>
+              <div class="overlay__content">
+                <p class="d-flex flex-column">
+                  <span class="mb-3"
+                    >Cast your CV into our ocean of opportunities! 🌊 We'll
+                    catch it and get back to you soon, swimmingly!</span
+                  >
+                  <span
+                    >➡️ Drop your application
+                    <a class="career-link" href="mailto:career@tidal.com"
+                      >here</a
+                    >.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
           <h2 class="my-5 text-center">Career</h2>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -710,7 +742,7 @@
                     <li>Employee discounts on food and beverages</li>
                     <li>Supportive and collaborative work environment</li>
                   </ul>
-                  <button type="button" class="btn buttons">Apply</button>
+                  <a href="#popup-job" class="btn buttons">Apply</a>
                 </div>
               </div>
             </div>
@@ -784,7 +816,7 @@
                     <li>Employee discounts on food and beverages</li>
                     <li>Supportive and collaborative work environment</li>
                   </ul>
-                  <button type="button" class="btn buttons">Apply</button>
+                  <a href="#popup-job" class="btn buttons">Apply</a>
                 </div>
               </div>
             </div>
@@ -859,7 +891,7 @@
                     <li>Employee discounts on food and beverages</li>
                     <li>Supportive and collaborative work environment</li>
                   </ul>
-                  <button type="button" class="btn buttons">Apply</button>
+                  <a href="#popup-job" class="btn buttons">Apply</a>
                 </div>
               </div>
             </div>
@@ -933,14 +965,26 @@
                     <li>Employee discounts on food and beverages</li>
                     <li>Supportive and collaborative work environment</li>
                   </ul>
-                  <button type="button" class="btn buttons">Apply</button>
+                  <a href="#popup-job" class="btn buttons">Apply</a>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="contacts" class="scroll-margin">
+        <section id="contacts" class="scroll-margin mx-3">
+          <div id="popup-thanks" class="overlay">
+            <div class="overlay__popup">
+              <h2>Tidal Bistro</h2>
+              <a class="overlay__close" href="#contacts">&times;</a>
+              <div class="overlay__content">
+                <p>
+                  🎣 Your message has sailed into our nets! We'll reel it in and
+                  get back to you soon!
+                </p>
+              </div>
+            </div>
+          </div>
           <h2 class="my-5 text-center">Contact Us</h2>
           <div
             class="row d-flex flex-row flex-wrap justify-content-center my-5"
@@ -955,39 +999,46 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-12 mb-3">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
-                  >Name</label
-                >
-                <input
-                  type="name"
-                  class="form-control contacts-form"
-                  id="exampleFormControlInput1"
-                  placeholder="Your full name"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput2" class="form-label"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  class="form-control contacts-form"
-                  id="exampleFormControlInput2"
-                  placeholder="name@example.com"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Questions and Comments</label
-                >
-                <textarea
-                  class="form-control contacts-form"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                ></textarea>
-              </div>
-              <button type="button" class="btn w-100 buttons">Submit</button>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control contacts-form"
+                    id="exampleFormControlInput1"
+                    placeholder="Your full name"
+                    pattern="[A-Za-z\s]+"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput2" class="form-label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control contacts-form"
+                    id="exampleFormControlInput2"
+                    placeholder="name@example.com"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Questions and Comments</label
+                  >
+                  <textarea
+                    class="form-control contacts-form"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+                <a href="#popup-thanks" class="btn w-100 buttons">Submit</a>
+              </form>
             </div>
             <div class="col-lg-3 col-md-12 mb-3">
               <iframe
@@ -1006,23 +1057,32 @@
     </main>
     <footer>
       <div class="footer-fill">
-        <div class="pt-3 mb-0 ms-3 d-flex flex-column">
-          <p class="fw-bold mb-0">Address:</p>
-          <p class="ms-3 mb-0">133 Spring St,</p>
-          <p class="ms-3 mb-0">Portland, ME,</p>
-          <p class="ms-3 mb-0">04101,</p>
-          <p class="ms-3 mb-0">USA</p>
+        <div
+          class="d-md-flex flex-row justify-content-center align-items-start flex-wrap pt-3"
+        >
+          <div class="mx-5 my-3">
+            <p class="mb-0 fw-bold">Address</p>
+            <p class="mb-0">133 Spring St</p>
+            <p class="mb-0">Portland, ME</p>
+            <p class="mb-0">04101</p>
+            <p class="mb-0">USA</p>
+          </div>
+          <div class="mx-5 my-3">
+            <p class="mb-0 fw-bold">Hours</p>
+            <p class="mb-0">11:00 AM - 9:00 PM</p>
+          </div>
+          <div class="mx-5 my-3">
+            <p class="mb-0 fw-bold">Phone</p>
+            <p class="mb-0">(207) 555-5555</p>
+          </div>
+          <div class="mx-5 my-3">
+            <p class="mb-0 fw-bold">Email</p>
+            <p class="mb-0">info@tidal.com</p>
+          </div>
         </div>
-        <p class="mb-0 ms-3">
-          <span class="fw-bold">Hours:</span> 11:00 AM - 9:00 PM
+        <p class="fst-italic text-center mt-3 mb-0 pb-1 footer-fill__copy">
+          &copy; 2024 Tidal Bistro
         </p>
-        <p class="mb-0 ms-3">
-          <span class="fw-bold">Phone:</span> (207) 555-5555
-        </p>
-        <p class="mb-0 ms-3">
-          <span class="fw-bold">Email:</span> info@tidal.com
-        </p>
-        <p class="fst-italic mt-2 mb-0 text-center">&copy; 2024 Tidal Bistro</p>
       </div>
     </footer>
     <script
