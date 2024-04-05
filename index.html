@@ -77,6 +77,43 @@
               <li class="nav-item ms-3">
                 <a class="nav-link d-inline-block" href="menu.html">Menu</a>
               </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link d-inline-block" href="menu.html#delivery"
+                  >Order Form</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle ms-3 d-inline-block"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-basket mb-2 me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+                    />
+                  </svg>
+                  Cart
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <iframe
+                      title="cart"
+                      src="cart.html"
+                      class="cart-frame"
+                    ></iframe>
+                  </li>
+                </ul>
+              </li>
             </ul>
             <form class="d-flex" role="search">
               <input
@@ -203,7 +240,7 @@
               <a class="overlay__close" href="#daily-special">&times;</a>
               <div class="overlay__content">
                 <p>
-                  🐟 Your taste buds are in for a treat! You've just added a
+                  🐟 Your taste buds are in for a treat! You've just added
                   today's special to your cart! 🦀
                 </p>
               </div>
@@ -650,7 +687,7 @@
           <div id="popup-job" class="overlay">
             <div class="overlay__popup">
               <h2>Tidal Bistro</h2>
-              <a class="overlay__close" href="#career">&times;</a>
+              <a class="overlay__close" href="#">&times;</a>
               <div class="overlay__content">
                 <p class="d-flex flex-column">
                   <span class="mb-3"
@@ -976,7 +1013,7 @@
           <div id="popup-thanks" class="overlay">
             <div class="overlay__popup">
               <h2>Tidal Bistro</h2>
-              <a class="overlay__close" href="#contacts">&times;</a>
+              <a class="overlay__close" href="#">&times;</a>
               <div class="overlay__content">
                 <p>
                   🎣 Your message has sailed into our nets! We'll reel it in and
@@ -999,13 +1036,14 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-12 mb-3">
-              <form>
+              <form action="#popup-thanks">
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label"
                     >Name</label
                   >
                   <input
                     type="text"
+                    name="full-name"
                     class="form-control contacts-form"
                     id="exampleFormControlInput1"
                     placeholder="Your full name"
@@ -1019,6 +1057,7 @@
                   >
                   <input
                     type="email"
+                    name="email"
                     class="form-control contacts-form"
                     id="exampleFormControlInput2"
                     placeholder="name@example.com"
@@ -1032,12 +1071,13 @@
                   >
                   <textarea
                     class="form-control contacts-form"
+                    name="comments"
                     id="exampleFormControlTextarea1"
                     rows="3"
                     required
                   ></textarea>
                 </div>
-                <a href="#popup-thanks" class="btn w-100 buttons">Submit</a>
+                <button type="submit" class="btn w-100 buttons">Submit</button>
               </form>
             </div>
             <div class="col-lg-3 col-md-12 mb-3">
