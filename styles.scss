@@ -310,7 +310,7 @@ body {
     @include image-containers(42vh, 40vw);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .cart-frame {
         @include image-containers(46vh, 100%);
     }
