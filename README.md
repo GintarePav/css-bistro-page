@@ -8,5 +8,8 @@ Due to the nature of the assignment, which involved the instructor's personal wo
 ## Additional Details
 To make the page more interactive, I added a couple of features that weren't described in the task. One of them is an embedded cart that holds demo items which could later be modified using JavaScript. Another item is the popups with custom messages that a user sees when they click on various buttons found across the website. 
 
-#### Disclaimer
+### Live Page
+See the page live: https://gintarepav.github.io/css-bistro-page/.
+
+### Disclaimer
 I used ChatGPT to generate the content such as titles, descriptions, color combinations, etc.
